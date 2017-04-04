@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google request with hidden language codes</title>
+</head>
+
+<body>
+    <h1>Google request with hidden language codes</h1>
+    <p>Look up more language codes from <a href='https://sites.google.com/site/tomihasa/google-language-codes'>ISO 639-1</a>
+        <p>
+            <p>Copy and use from your local client</p>
+
+            <form action='http://google.com/search' method='GET'>
+                <fieldset>
+                    <legend>English</legend>
+                    <input type='text' name='q' />
+                    <button style='cursor:pointer'>
+            <img src="http://www.nature.com/scitable/natedimages/send.jpg">
+        </button>
+                </fieldset>
+            </form>
+            <form action='http://google.es/search' method='GET'>
+                <fieldset>
+                    <legend>Spanish</legend>
+                    <input type='text' name='q' />
+                    <input type='hidden' value='es' name='hl' />
+                    <input type='submit' style='cursor:pointer' value='Search' />
+                </fieldset>
+            </form>
+            <form action='http://google.fr/search' method='GET'>
+                <fieldset>
+                    <legend>French</legend>
+                    <input type='text' name='q' />
+                    <input type='hidden' value='fr' name='hl' />
+                    <input type='image' style='vertical-align: bottom;' src="http://www.nature.com/scitable/natedimages/send.jpg" />
+                </fieldset>
+            </form>
+</body>
+
+</html>
