@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500i,900');
+@import url('https://fonts.googleapis.com/css?family=Aladin');
+
+body {
+    font-size: 150%;
+    color: blue;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.aladin {
+    font-family: 'Aladin', cursive;
+}
