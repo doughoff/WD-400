@@ -8,7 +8,28 @@ body {
 
 .roboto {
     font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
 }
+
 .aladin {
     font-family: 'Aladin', cursive;
+    font-size: 1.2rem;
+}
+
+html {
+    height: 100%;
+}
+
+.bg-gradient {
+    /* Permalink - use to edit and share this gradient: http: //colorzilla.com/gradient-editor/#b48dd6+0,7db9e8+100 */
+    background: #b48dd6;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #b48dd6 0%, #7db9e8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b48dd6 0%, #7db9e8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b48dd6 0%, #7db9e8 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b48dd6', endColorstr='#7db9e8', GradientType=0);
+    /* IE6-9 */
 }
