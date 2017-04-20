@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitesearch with Google</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="css/wd-400.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Sitesearch with Google</h1>
+    <a href="index.html">
+        <i class="fa fa-home fa-2x" style='color:red'></i>
+    </a>
+    <form action="http://google.com/search">
+        <div>
+            <label for="query">Search for: </label>
+            <input type="text" id='query' name='q' autofocus placeholder='search my site only'>
+        </div>
+        <input type="hidden" name='sitesearch' value='http://centriq.com'>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
