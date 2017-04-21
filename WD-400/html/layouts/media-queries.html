@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="css/wd-400.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        /* CSS for all widths */
+        img {
+            width:800px;
+        }
+        body {
+            font-size: 1.2rem;
+        }
+        nav{
+            float:right;
+        }
+        /* CSS for screen widths smaller than 1100 */
+        @media screen and (max-width: 1100px) {
+            img{
+                 width:40%; /* relative sizing to width */
+            }
+            body {
+                 font-size: 1rem;
+                 color: black;
+            }
+        }
+
+          /* CSS for screen widths smaller than 600 */
+        @media screen and (max-width: 600px) {
+            img{
+                 width:200px;
+            }
+            body {
+                 font-size:1.1rem;
+                 line-height: 1.3;
+                 color:blueviolet;
+            }
+            nav{
+                float:none;
+            }
+        }
+            @media print {
+                img {
+                    display:none;
+                }
+            } 
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <i class="fa fa-home fa-2x" style='color:red'></i>
+        </a>
+    </nav>
+     <h1>Media Queries</h1>
+   <div>
+        <img src="images/grumpy-cat.jpg" alt="Grumpy Cat" style='float:right'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolorum sed inventore consectetur, voluptatum voluptas labore magni corporis voluptatibus ut iste, voluptatem molestias nobis, pariatur expedita praesentium laudantium. Autem, voluptates!</p>
+        <p>Illo temporibus voluptates provident dicta amet, itaque vel aut laborum sit necessitatibus repellendus eaque adipisci. Repellat quae, laboriosam magnam aliquid magni porro atque, debitis quos, blanditiis tempora ipsam natus doloribus.</p>
+        <p>Debitis voluptate, nihil cum veniam necessitatibus asperiores suscipit! Dicta ex iste voluptatum, maiores commodi possimus recusandae quas molestias, ullam eaque est, a temporibus voluptatibus ratione quia, amet minima quo vel!</p>
+    </div>
+</body>
+
+</html>
