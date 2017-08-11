@@ -11,15 +11,15 @@ Last edited 8/9/2017
 /* set the root element size, use rem units for all descendants */
 /* change this size to affect all pages' elements */
 html {
-    font-size: 16px;
+    font-size: 10px;
     height: 100%;
 }
 
 /*************************** Elements ***********************************/
 
 body {
-    font-size: 1.7rem;
-    line-height: 2.2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     font-family: 'roboto', sans-serif;
 }
 /* links */
