@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template page</title>
+    <title>Before and after</title>
 
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <style>
         div:after {
-            content: "– a div written by me";
+            content: " – a div written by me";
+            font-weight: bold;
         }
         
         div:before {
@@ -24,12 +25,13 @@
         ul>li:before {
             content: counter(items);
             counter-increment: items;
+            padding-left: 1rem;
         }
     </style>
 </head>
 
 <body>
-    <h1>Headline</h1>
+    <h1>Before and after pseudo-classes</h1>
     <a href="index.html">
         <i class="fa fa-home fa-2x" style='color:red'></i>
     </a>

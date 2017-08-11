@@ -1,11 +1,44 @@
+/* 
+wd-400.css
+Doug Hoff
+Last edited 8/9/2017 
+*/
+
+/* Font families from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500i,900');
 @import url('https://fonts.googleapis.com/css?family=Aladin');
 
-body {
-    font-size: 150%;
-    color: blue;
+/* set the root element size, use rem units for all descendants */
+/* change this size to affect all pages' elements */
+html {
+    font-size: 16px;
+    height: 100%;
 }
 
+/*************************** Elements ***********************************/
+
+body {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    font-family: 'roboto', sans-serif;
+}
+/* links */
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: orangered;
+}
+a:hover {
+    color:orange;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: grey;
+}
+
+/*************************** Classes ***********************************/
 .roboto {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
@@ -14,10 +47,6 @@ body {
 .aladin {
     font-family: 'Aladin', cursive;
     font-size: 1.2rem;
-}
-
-html {
-    height: 100%;
 }
 
 .bg-gradient {
@@ -33,3 +62,5 @@ html {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b48dd6', endColorstr='#7db9e8', GradientType=0);
     /* IE6-9 */
 }
+
+/*************************** IDs ***********************************/
