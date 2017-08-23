@@ -5,52 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries</title>
-    
-    <link rel="icon" href="images/favicon.ico">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" />
-    <link rel="stylesheet" href="css/wd-400.css">
+    <link rel="stylesheet" href="../css/wd-400.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <style>
-        /* CSS for all widths */
-        img {
-            width:800px;
-        }
-        body {
-            font-size: 1.2rem;
-        }
-        nav{
-            float:right;
-        }
-        /* CSS for screen widths smaller than 1100 */
-        @media screen and (max-width: 1100px) {
-            img{
-                 width:40%; /* relative sizing to width */
+        /* Base styles - mobile first*/
+
+        @media screen {
+            #media-type:after {
+                content: " Smartphone - small";
+            }
+            img {
+                max-width: 50%;
+                float: right;
+                clear: right;
+                margin-left: 1rem;
             }
             body {
-                 font-size: 1rem;
-                 color: black;
+                font-size: 1.4rem;
+                line-height: 1.7;
+            }
+            nav {
+                float: right;
+                clear: right;
+                margin-left: 1rem;
+            }
+            h1,h2,h3,h4,h5,h6 {
+                line-height: 1.2;
+            }
+        }
+        /* Break points 375px, 425px, 760px, 1024px, 1820px */
+
+        @media screen and (min-width: 375px) {
+            #media-type:after {
+                content: " Smartphone - medium";
+            }
+            html {
+                background-color: hsl(130, 50%, 95%);
             }
         }
 
-          /* CSS for screen widths smaller than 600 */
-        @media screen and (max-width: 600px) {
-            img{
-                 width:200px;
+        @media screen and (min-width: 425px) {
+            #media-type:after {
+                content: " Smartphone - large";
             }
-            body {
-                 font-size:1.1rem;
-                 line-height: 1.3;
-                 color:blueviolet;
-            }
-            nav{
-                float:none;
+            html {
+                background-color: hsl(130, 50%, 90%);
             }
         }
-            @media print {
-                img {
-                    display:none;
-                }
-            } 
+
+        @media screen and (min-width: 760px) {
+            #media-type:after {
+                content: "Tablets";
+            }
+            html {
+                background-color: hsl(130, 50%, 85%);
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            #media-type:after {
+                content: " Desktops and laptops";
+            }
+            html {
+                background-color: hsl(130, 50%, 80%);
+            }
+            img {
+                max-width: 40%;
+            }
+        }
+
+        @media screen and (min-width: 1820px) {
+            #media-type:after {
+                content: " Large screens ";
+            }
+            html {
+                background-color: hsl(130, 50%, 75%);
+            }
+        }
+
+        @media print {
+            #media-type:after {
+                content: "Printer";
+            }
+            img {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -60,12 +102,33 @@
             <i class="fa fa-home fa-2x" style='color:red'></i>
         </a>
     </nav>
-     <h1>Media Queries</h1>
-   <div>
-        <img src="images/grumpy-cat.jpg" alt="Grumpy Cat" style='float:right'>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolorum sed inventore consectetur, voluptatum voluptas labore magni corporis voluptatibus ut iste, voluptatem molestias nobis, pariatur expedita praesentium laudantium. Autem, voluptates!</p>
-        <p>Illo temporibus voluptates provident dicta amet, itaque vel aut laborum sit necessitatibus repellendus eaque adipisci. Repellat quae, laboriosam magnam aliquid magni porro atque, debitis quos, blanditiis tempora ipsam natus doloribus.</p>
-        <p>Debitis voluptate, nihil cum veniam necessitatibus asperiores suscipit! Dicta ex iste voluptatum, maiores commodi possimus recusandae quas molestias, ullam eaque est, a temporibus voluptatibus ratione quia, amet minima quo vel!</p>
+    <h1>Media Queries for <span id="media-type"></span></h1>
+    <div>
+        <img src="../img/grumpy-cat.jpg" alt="Grumpy Cat">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolorum sed inventore consectetur, voluptatum voluptas
+            labore magni corporis voluptatibus ut iste, voluptatem molestias nobis, pariatur expedita praesentium laudantium.
+            Autem, voluptates!</p>
+        <p>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium odit dolor repellendus est asperiores adipisci assumenda! Beatae, quibusdam nisi! Fugit impedit quia repellat in quidem dolorum, laborum facere esse excepturi!</span>
+            <span>Illo ullam voluptatum perferendis accusamus delectus, enim, laudantium quisquam earum ex nobis facere sint quis, ad iure odit repellat numquam eligendi quaerat non quibusdam minima sapiente molestias. Qui, debitis quia.</span>
+            <span>Neque ratione, officiis debitis id saepe aut rem, aliquam, dicta eligendi vero dignissimos ea odit praesentium maxime alias molestias tempora. Facilis est ullam dignissimos in iusto ratione nobis fugiat praesentium!</span>
+        </p>
+        <p>Debitis voluptate, nihil cum veniam necessitatibus asperiores suscipit! Dicta ex iste voluptatum, maiores commodi
+            possimus recusandae quas molestias, ullam eaque est, a temporibus voluptatibus ratione quia, amet minima quo
+            vel!
+        </p>
+        <p>
+            <span>Dicta commodi officiis sunt blanditiis doloribus ullam exercitationem voluptas voluptatibus obcaecati atque? Quidem inventore aspernatur pariatur, asperiores itaque exercitationem eum, soluta optio repellendus nulla ullam ipsa! Cumque vero nobis illum.</span>
+            <span>Excepturi reiciendis eaque quasi corrupti ex aut maiores, commodi quidem incidunt dolores debitis iure? Magnam animi et ipsam soluta commodi vero, non, repudiandae quam laborum obcaecati dicta facere nobis ullam?</span>
+            <span>Provident, minima autem neque porro asperiores at nam fugiat sequi, odio sapiente ipsum pariatur maxime tempora animi perferendis blanditiis voluptatem deserunt tempore voluptate? Sed a, eligendi perspiciatis accusamus veritatis dolore.</span>
+        </p>
+        <p>
+            <span>Nihil aliquam error consequuntur, expedita vel eligendi nostrum quam cum autem consequatur facilis asperiores laborum delectus amet quos recusandae culpa ipsa at facere, possimus soluta distinctio? Beatae ab repellendus autem.</span>
+            <span>Quam dicta aliquid error obcaecati totam facilis, deleniti quisquam nam cum! Suscipit quidem, voluptas provident vero facilis aspernatur. In velit alias amet officia dolor nihil blanditiis quibusdam quas quis iusto?</span>
+            <span>Architecto pariatur quibusdam perferendis? Reiciendis, ipsum laboriosam. Exercitationem laborum odio iusto iure inventore dolorum placeat omnis error dicta porro nesciunt veritatis, neque consequatur iste temporibus aperiam repellendus. Non, eaque natus?</span>
+        </p>
+        <p>Illo temporibus voluptates provident dicta amet, itaque vel aut laborum sit necessitatibus repellendus eaque adipisci.
+            Repellat quae, laboriosam magnam aliquid magni porro atque, debitis quos, blanditiis tempora ipsam natus doloribus.</p>
     </div>
 </body>
 
