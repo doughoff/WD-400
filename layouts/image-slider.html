@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slick Carousel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="../css/wd-400.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(function () {
+            $('#carousel').slick({
+                dots: false,
+                infinite: true,
+                speed: 2000,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+    <style>
+        #carousel div {
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        .white-glass-top {
+            padding: 20px;
+            margin: 20px 20px 380px 20px;
+            background-color: hsla(0, 0%, 100%, 0.5);
+        }
+        
+        .white-glass-bottom {
+            padding: 20px;
+            margin: 380px 20px 20px 20px;
+            background-color: hsla(0, 0%, 100%, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Slick Carousel (jQuery plugin)</h1>
+    <div id='carousel'>
+        <div style="background-image: url('../images/landscape1.jpg');">
+            <div class="white-glass-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas id consequuntur tenetur mollitia. Nemo quaerat
+                iure eos illo temporibus? Totam impedit qui sed exercitationem alias omnis. Facere ut veritatis non? <a href="../index.html">Home page</a></div>
+        </div>
+        <div style="background-image: url('../images/landscape2.jpg');">
+            <div class="white-glass-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod magni unde, ullam quis repellat totam
+                veritatis illo facilis amet dicta molestias ea vero illum assumenda laborum dolore tenetur a.</div>
+        </div>
+        <div style="background-image: url('../images/building1.jpg');">
+            <div class="white-glass-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium possimus, excepturi accusamus cum perspiciatis
+                iusto harum ipsum impedit cumque quasi non tempore, corrupti, dolores eos! Perferendis unde est ea saepe.</div>
+        </div>
+        <div style="background-image: url('../images/landscape3.jpg');">
+            <div class="white-glass-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora perspiciatis facere minima delectus facilis
+                illum nostrum laborum consectetur, molestias id velit sunt aliquam totam, placeat qui natus? Repellat, perferendis
+                provident?</div>
+        </div>
+        <div style="background-image: url('../images/landscape4.jpg');">
+            <div class="white-glass-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore eligendi culpa, quas laudantium quia
+                ducimus vitae. Esse accusamus maiores quae? Officia fugiat in distinctio iste error, possimus illum laudantium.</div>
+        </div>
+        <div style="background-image: url('../images/building2.jpg');">
+            <div class="white-glass-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque ratione doloremque laborum tenetur
+                illum mollitia totam consequuntur harum quis! Minima ratione impedit architecto quos sapiente, fugiat aut
+                id a?</div>
+        </div>
+        <div style="background-image: url('../images/landscape5.jpg');">
+            <div class="white-glass-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error libero, possimus porro beatae ab ullam quam esse
+                facere, tenetur odio harum nobis. Ipsam incidunt veritatis id. Optio ducimus impedit soluta.</div>
+        </div>
+    </div>
+</body>
+
+</html>
