@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Grid 8</title>
+	<link rel="stylesheet" href="grid.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+	 crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<h1>
+		<a href="grid.7.html">
+			<i style='color:grey' class="far fa-arrow-alt-circle-left"></i>
+		</a> CSS Grid 8
+		<!-- <a href="grid.9.html">
+			<i style='color:grey' class="far fa-arrow-alt-circle-right"></i> -->
+		</a>
+	</h1>
+	<p>Mobile first - Responsive grid - 0 -> 550 -> 767 -> 900</p>
+	<p>Page width: <data></data></p>
+	<section class='grid responsive'>
+		<header class="header box">
+			<h2>Header</h2>
+		</header>
+		<nav class="nav box">
+			<h2>Nav</h2>
+		</nav>
+		<aside class="aside box">
+			<h2>Aside</h2>
+		</aside>
+		<main class="main box">
+			<h2>Main</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, qui ducimus fugiat aperiam magni dolor dolore, quaerat
+				asperiores eveniet aliquam ratione quidem, eos odio. Temporibus molestiae, officia similique omnis aut. Lorem ipsum dolor,
+				sit amet consectetur adipisicing elit. Quaerat quis magnam at velit cumque! Rem aliquid totam expedita reiciendis ipsam
+				ipsa, eos, cum ab doloribus inventore est veritatis! Quis odit vel minima numquam, suscipit molestias earum ducimus.
+				Minus incidunt repellendus molestias modi ullam ea numquam dolor omnis placeat, autem corporis deleniti nostrum sint
+				vitae iste non, reprehenderit eius optio, odio consequuntur sit rem perferendis aliquam? Itaque ipsam consequuntur fugit
+				dolore explicabo ut, blanditiis quibusdam et minus magnam. Unde repudiandae aliquam quo. Veritatis nemo, quae nihil error
+				magni culpa, voluptatum adipisci maxime sed eaque, consectetur labore laboriosam amet reprehenderit ipsa molestias!
+			</p>
+		</main>
+		<footer class="footer box">
+			<h2>Footer</h2>
+		</footer>
+	</section>
+</body>
+<script>
+	window.addEventListener("resize", showWindowWidth);
+	window.addEventListener("load", showWindowWidth);
+
+	function showWindowWidth() {
+		var data = document.querySelector('data');
+		data.innerHTML = window.innerWidth + ' px ';
+	}
+</script>
+</html>

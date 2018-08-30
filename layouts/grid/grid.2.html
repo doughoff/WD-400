@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid 2</title>
+    <link rel="stylesheet" href="grid.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>
+        <a href="grid.1.html">
+            <i style='color:grey' class="far fa-arrow-alt-circle-left"></i>
+        </a> CSS Grid 2
+        <a href="grid.3.html">
+            <i style='color:grey' class="far fa-arrow-alt-circle-right"></i>
+        </a>
+    </h1>
+
+    <p>Grid</p>
+    <section class="grid">
+        <div class="box">
+            <h2>Block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo debitis libero ab placeat soluta ullam
+                unde, officiis, saepe, veniam recusandae natus aliquam sit deleniti cupiditate eius quos nihil tempora!</p>
+        </div>
+        <div>
+            <div class="box">
+                <h2>Block</h2>
+                <p>Aliquam soluta culpa officia possimus accusamus nostrum quia est fugiat deleniti id necessitatibus perferendis
+                    ipsam cupiditate itaque iusto, vel saepe voluptatibus labore molestias? A, sapiente quis eligendi nulla
+                    quos quia.
+                </p>
+            </div>
+    </section>
+
+    <p>grid-template-columns: 50% 49%;</p>
+    <section class="grid col-2">
+        <div class="box">
+            <h2>Block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo debitis libero ab placeat soluta ullam
+                unde, officiis, saepe, veniam recusandae natus aliquam sit deleniti cupiditate eius quos nihil tempora!</p>
+        </div>
+        <div class="box">
+            <h2>Block</h2>
+            <p>Aliquam soluta culpa officia possimus accusamus nostrum quia est fugiat deleniti id necessitatibus perferendis
+                ipsam cupiditate itaque iusto, vel saepe voluptatibus labore molestias? A, sapiente quis eligendi nulla quos
+                quia.
+            </p>
+        </div>
+    </section>
+
+    <p>grid-template-columns: 70% 29%;</p>
+    <section class="grid col-2-mixed">
+        <div class="box">
+            <h2>Block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo debitis libero ab placeat soluta ullam
+                unde, officiis, saepe, veniam recusandae natus aliquam sit deleniti cupiditate eius quos nihil tempora!</p>
+        </div>
+        <div class="box">
+            <h2>Block</h2>
+            <p>Aliquam soluta culpa officia possimus accusamus nostrum quia est fugiat deleniti id necessitatibus perferendis
+                ipsam cupiditate itaque iusto, vel saepe voluptatibus labore molestias? A, sapiente quis eligendi nulla quos
+                quia.
+            </p>
+        </div>
+    </section>
+
+    <p> grid-template-columns: 33% 33% 33%;
+    </p>
+    <section class="grid col-3">
+        <div class="box">
+            <h2>Block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo debitis libero ab placeat soluta ullam
+                unde, officiis, saepe, veniam recusandae natus aliquam sit deleniti cupiditate eius quos nihil tempora!</p>
+        </div>
+        <div class="box">
+            <h2>Block</h2>
+            <p>Aliquam soluta culpa officia possimus accusamus nostrum quia est fugiat deleniti id necessitatibus perferendis
+                ipsam cupiditate itaque iusto, vel saepe voluptatibus labore molestias? A, sapiente quis eligendi nulla quos
+                quia.
+            </p>
+        </div>
+    </section>
+
+    <p>grid-template-columns: 20% 60% 20%;</p>
+    <section class="grid col-3-mixed">
+        <div class="box">
+            <h2>Block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo debitis libero ab placeat soluta ullam
+                unde, officiis, saepe, veniam recusandae natus aliquam sit deleniti cupiditate eius quos nihil tempora!</p>
+        </div>
+
+        <div class="box">
+            <h2>Block</h2>
+            <p>Aliquam soluta culpa officia possimus accusamus nostrum quia est fugiat deleniti id necessitatibus perferendis
+                ipsam cupiditate itaque iusto, vel saepe voluptatibus labore molestias? A, sapiente quis eligendi nulla quos
+                quia.
+            </p>
+        </div>
+    </section>
+
+    <p>grid-template-columns: 20% 90% 20%;</p>
+    <section class="grid col-3-too-big">
+        <div class="box">
+            <h2>Block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo debitis libero ab placeat soluta ullam
+                unde, officiis, saepe, veniam recusandae natus aliquam sit deleniti cupiditate eius quos nihil tempora!</p>
+        </div>
+
+        <div class="box">
+            <h2>Block</h2>
+            <p>Officia possimus accusamus nostrum quia est fugiat deleniti id necessitatibus perferendis ipsam cupiditate itaque
+                iusto, vel saepe voluptatibus labore molestias? A, sapiente quis eligendi nulla quos quia. Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit. Soluta consequuntur asperiores a tenetur cupiditate quidem illum.
+                Nulla nam quaerat ab.
+            </p>
+        </div>
+    </section>
+
+    <p> grid-template-columns: 33% 33% 33%;
+    </p>
+    <section class="grid col-3">
+        <div class="box">
+            <h2>Block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo debitis libero ab placeat soluta ullam
+                unde, officiis, saepe, veniam recusandae natus aliquam sit deleniti cupiditate eius quos nihil tempora!</p>
+        </div>
+        <div class="box">
+            <h2>Block</h2>
+            <p>Aliquam soluta culpa officia possimus accusamus nostrum quia est fugiat deleniti id necessitatibus perferendis
+                ipsam cupiditate itaque iusto, vel saepe voluptatibus labore molestias? A, sapiente quis eligendi nulla quos
+                quia.
+            </p>
+        </div>
+        <div class="box">
+            <h2>Block</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem molestias minima praesentium tempora officiis magni
+                quos optio accusamus ad corporis, fugiat voluptatem earum nam non quis modi? Aliquam, iusto soluta?</p>
+        </div>
+        <div class="box">
+            <h2>Block</h2>
+            <p>Quas dolorum sunt explicabo autem voluptatum temporibus, eligendi nisi dolores officia veritatis suscipit vitae,
+                dolore harum, enim accusamus corporis sint. Ipsa eos, molestias corrupti repudiandae culpa at? Dicta, aliquid
+                ab?
+            </p>
+        </div>
+        <div class="box">
+            <h2>Block</h2>
+            <p>Cumque maxime architecto ut amet enim commodi ullam velit ipsum aperiam eaque possimus placeat eligendi, voluptas
+                harum dolore nihil qui officiis! Dignissimos pariatur tempore harum nostrum nulla dolorum at fugit.</p>
+        </div>
+        <div class="box">
+            <h2>Block</h2>
+            <p>Accusamus ducimus corrupti tempora ut blanditiis magnam optio veritatis consectetur minima numquam enim dolore
+                aliquid aspernatur, dignissimos sunt quis eum totam nulla culpa ad! Qui eaque cupiditate perspiciatis at
+                dicta?
+            </p>
+        </div>
+    </section>
+
+    <p> grid-template-columns: 33% 33% 33% , fixed-width items
+    </p>
+    <section class="grid col-3">
+        <div class="box w250">
+            <h2>Block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo debitis libero ab placeat soluta ullam
+                unde, officiis, saepe, veniam recusandae natus aliquam sit deleniti cupiditate eius quos nihil tempora!</p>
+        </div>
+        <div class="box w250">
+            <h2>Block</h2>
+            <p>Aliquam soluta culpa officia possimus accusamus nostrum quia est fugiat deleniti id necessitatibus perferendis
+                ipsam cupiditate itaque iusto, vel saepe voluptatibus labore molestias? A, sapiente quis eligendi nulla quos
+                quia.
+            </p>
+        </div>
+        <div class="box w250">
+            <h2>Block</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem molestias minima praesentium tempora officiis magni
+                quos optio accusamus ad corporis, fugiat voluptatem earum nam non quis modi? Aliquam, iusto soluta?</p>
+        </div>
+        <div class="box w250">
+            <h2>Block</h2>
+            <p>Quas dolorum sunt explicabo autem voluptatum temporibus, eligendi nisi dolores officia veritatis suscipit vitae,
+                dolore harum, enim accusamus corporis sint. Ipsa eos, molestias corrupti repudiandae culpa at? Dicta, aliquid
+                ab?
+            </p>
+        </div>
+        <div class="box w250">
+            <h2>Block</h2>
+            <p>Cumque maxime architecto ut amet enim commodi ullam velit ipsum aperiam eaque possimus placeat eligendi, voluptas
+                harum dolore nihil qui officiis! Dignissimos pariatur tempore harum nostrum nulla dolorum at fugit.</p>
+        </div>
+        <div class="box w250">
+            <h2>Block</h2>
+            <p>Accusamus ducimus corrupti tempora ut blanditiis magnam optio veritatis consectetur minima numquam enim dolore
+                aliquid aspernatur, dignissimos sunt quis eum totam nulla culpa ad! Qui eaque cupiditate perspiciatis at
+                dicta?
+            </p>
+        </div>
+    </section>
+
+
+    <p> inline grid-template-columns: 33% 33% 33%;, fixed-width items
+    </p>
+    <section class="inline-grid col-3">
+        <div class="box w250">
+            <h2>Block</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi explicabo debitis libero ab placeat soluta ullam
+                unde, officiis, saepe, veniam recusandae natus aliquam sit deleniti cupiditate eius quos nihil tempora!</p>
+        </div>
+        <div class="box w250">
+            <h2>Block</h2>
+            <p>Aliquam soluta culpa officia possimus accusamus nostrum quia est fugiat deleniti id necessitatibus perferendis
+                ipsam cupiditate itaque iusto, vel saepe voluptatibus labore molestias? A, sapiente quis eligendi nulla quos
+                quia.
+            </p>
+        </div>
+        <div class="box w250">
+            <h2>Block</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem molestias minima praesentium tempora officiis magni
+                quos optio accusamus ad corporis, fugiat voluptatem earum nam non quis modi? Aliquam, iusto soluta?</p>
+        </div>
+        <div class="box w250">
+            <h2>Block</h2>
+            <p>Quas dolorum sunt explicabo autem voluptatum temporibus, eligendi nisi dolores officia veritatis suscipit vitae,
+                dolore harum, enim accusamus corporis sint. Ipsa eos, molestias corrupti repudiandae culpa at? Dicta, aliquid
+                ab?
+            </p>
+        </div>
+        <div class="box w250">
+            <h2>Block</h2>
+            <p>Cumque maxime architecto ut amet enim commodi ullam velit ipsum aperiam eaque possimus placeat eligendi, voluptas
+                harum dolore nihil qui officiis! Dignissimos pariatur tempore harum nostrum nulla dolorum at fugit.</p>
+        </div>
+        <div class="box w250">
+            <h2>Block</h2>
+            <p>Accusamus ducimus corrupti tempora ut blanditiis magnam optio veritatis consectetur minima numquam enim dolore
+                aliquid aspernatur, dignissimos sunt quis eum totam nulla culpa ad! Qui eaque cupiditate perspiciatis at
+                dicta?
+            </p>
+        </div>
+    </section>
+
+
+</html>
