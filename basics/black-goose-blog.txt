@@ -1,8 +1,15 @@
-<!-- Use block elements of header, footer, h1, h2, h3, 
-ul, ol, li, 
-div, nav, article, section, aside, p, 
-and inline elements of 
-date, abbr, dl, dt, dd, dfn, cite, b, q  and any others you like. -->
+<!-- Use block elements of 
+    header, footer, h1, h2, h3, 
+    ul, ol, li, 
+    div,
+    nav, article, section, aside, main, p, blockquote 
+-->
+
+<!-- and inline elements of 
+    date, abbr, cite, b, i,
+    dl, dt, dd, dfn,   
+    and any others you like. 
+-->
 
 The Black Goose Blog
 
