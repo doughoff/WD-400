@@ -3,9 +3,12 @@ section {
     padding: 5px;
     margin: 20px 0;
 }
-
+ 
 a {
     text-decoration: none;
+}
+i.far {
+    color: grey;
 }
 
 .box {
@@ -15,24 +18,14 @@ a {
     padding: .5rem;
 }
 
-.w250 {
-    width: 250px;
-}
-
-.big-salmon {
-    background-color: darksalmon;
-    font-size: 1.2rem;
-}
+/* Grid 1 */
 
 .grid {
     display: grid;
     grid-gap: 10px;
 }
 
-.inline-grid {
-    display: inline-grid;
-    grid-gap: 10px;
-}
+/* Grid 1 */
 
 .col-2 {
     grid-template-columns: 50% 49%;
@@ -53,6 +46,16 @@ a {
 .col-3-too-big {
     grid-template-columns: 20% 90% 20%;
     ;
+}
+.w250 {
+    width: 250px;
+}
+
+/* Grid 3 ----------------------------------- */
+
+.big-salmon {
+    background-color: darksalmon;
+    font-size: 1.2rem;
 }
 
 .absolute-1c1r {
@@ -85,6 +88,8 @@ a {
     grid-row: 1;
 }
 
+/* ----------------------------- Grid 4 */
+
 .named-3-col-explicit {
     grid-template-columns: [c1] 32% [c2] 32% [c3] 32% [c-end];
 }
@@ -97,6 +102,8 @@ a {
     grid-column: c3;
 }
 
+
+/* ---------------------------------Grid 5  */
 .col-4-repeat {
     grid-template-columns: repeat(4, 24%);
 }
@@ -207,4 +214,11 @@ a {
         grid-template-columns: minmax(20%, 200px) auto auto minmax(20%, 200px);
         grid-template-areas: "nav header header header" "nav main main aside" "nav main main aside" "nav footer footer footer";
     }
+}
+
+
+/* ----- */
+.inline-grid {
+    display: inline-grid;
+    grid-gap: 10px;
 }
