@@ -6,7 +6,7 @@
 -->
 
 <!-- and inline elements of 
-    date, abbr, cite, b, i,
+    date, abbr, cite, b, i, q,
     dl, dt, dd, dfn,   
     and any others you like. 
 -->
