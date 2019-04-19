@@ -5,62 +5,110 @@ Last edited 8/9/2017
 */
 
 /* Font families from Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500i,900');
-@import url('https://fonts.googleapis.com/css?family=Aladin');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500i,900");
+@import url("https://fonts.googleapis.com/css?family=Aladin");
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 
 /* set the root element size, use rem units for all descendants */
 /* change this size to affect all pages' elements */
 html {
-    font-size: 10px;
-    height: 100%;
+  font-size: 10px;
+  height: 100%;
 }
 
 /*************************** Elements ***********************************/
 
 body {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    font-family: 'roboto', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-family: "roboto", sans-serif;
+  margin: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.lucky {
+  font-family: "Luckiest Guy", cursive;
+}
+
+img {
+  float: right;
+  margin-left: 30px;
+  /* no pile ups! */
+  clear: both;
+  /* show big images */
+  max-height: 250px;
+}
+/*************************** Forms ***********************************/
+label,
+.label {
+  width: 8rem;
+  display: inline-block;
+  /* label is inline, no width control, stay on same line with inline-block and gain width control */
+  text-align: right;
+  padding: 5px;
+  font-weight: bold;
 }
 /* links */
 
 a {
-    font-weight: bold;
-    text-decoration: none;
-    color: orangered;
+  font-weight: bold;
+  text-decoration: none;
+  color: orangered;
 }
 a:hover {
-    color:orange;
-    text-decoration: underline;
+  color: orange;
+  text-decoration: underline;
 }
 
 a:visited {
-    color: grey;
+  color: grey;
 }
 
 /*************************** Classes ***********************************/
 .roboto {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
 }
 
 .aladin {
-    font-family: 'Aladin', cursive;
-    font-size: 1.2rem;
+  font-family: "Aladin", cursive;
+  font-size: 1.2rem;
 }
 
 .bg-gradient {
-    /* Permalink - use to edit and share this gradient: http: //colorzilla.com/gradient-editor/#b48dd6+0,7db9e8+100 */
-    background: #b48dd6;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #b48dd6 0%, #7db9e8 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #b48dd6 0%, #7db9e8 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #b48dd6 0%, #7db9e8 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b48dd6', endColorstr='#7db9e8', GradientType=0);
-    /* IE6-9 */
+  /* Permalink - use to edit and share this gradient: http: //colorzilla.com/gradient-editor/#b48dd6+0,7db9e8+100 */
+  background: #b48dd6;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #b48dd6 0%, #7db9e8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b48dd6 0%, #7db9e8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b48dd6 0%, #7db9e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b48dd6', endColorstr='#7db9e8', GradientType=0);
+  /* IE6-9 */
 }
 
-/*************************** IDs ***********************************/
+.bg-gradient-blue {
+  background: #f1f2ff;
+  background: linear-gradient(
+    to bottom,
+    hsla(236, 100%, 100%, 1) 0%,
+    hsla(233, 100%, 82%, 1) 100%
+  );
+}
+
+.bg-landscape1 {
+    background-color: hsl(183, 28%, 63%);
+    /* background-image: url(./favicon.ico); */
+    background-image: url(../images/landscape1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+

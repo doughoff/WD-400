@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sitesearch</title>
+
+    <!-- reset stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- sitewide stylesheet -->
+    <link rel="stylesheet" href="../css/wd-400.css" />
+  </head>
+  <body>
+    <a href="./default.html"
+      ><i
+        class="fas fa-home"
+        style="font-size: 300%; color:green; float:right"
+      ></i
+    ></a>
+    <h1>Sitesearch</h1>
+
+    <form action="https://google.com/search">
+      <div>
+        <label for="as_q">Find on KansasCity.com: </label>
+        <input placeholder="Query" type="text" name="as_q" value="Parkville" />
+      </div>
+      <div>
+        <input
+          type="hidden"
+          value="kansascity.com"
+          name="as_sitesearch"
+          id="class"
+        />
+      </div>
+    </form>
+
+    <form action="https://google.com/search">
+      <div>
+        <label for="as_q">Find on CNN.com: </label>
+        <input placeholder="Query" type="text" name="as_q" value="Parkville" />
+      </div>
+      <div>
+        <input
+          type="hidden"
+          value="cnn.com"
+          name="as_sitesearch"
+          id="class"
+        />
+      </div>
+    </form>
+
+    <form action="https://google.com/search">
+      <div>
+        <label for="as_q">Find on New York Times: </label>
+        <input placeholder="Query" type="text" name="as_q" value="Parkville" />
+      </div>
+      <div>
+        <input
+          type="hidden"
+          value="nytimes.com"
+          name="as_sitesearch"
+          id="class"
+        />
+      </div>
+    </form>
+  </body>
+</html>
